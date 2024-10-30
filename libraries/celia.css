@@ -1,0 +1,118 @@
+/* Courgette font designed by Karolina Lach */
+@font-face {
+  font-display: swap;
+  font-family: 'Courgette';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://fonts.gstatic.com/s/courgette/v7/wEO_EBrAnc9BLjLQAUk1VvoK.woff2');
+}
+
+.celia {
+  background-color: #ffcc00;
+  font-size: 1vw;
+  margin: 3em auto 1em auto;
+  padding: 0;
+  position: relative;
+  width: 48em;
+  height: 16em;
+  z-index: 999;
+}
+
+.celia.left { background-image: linear-gradient(45deg, #ffd940 0%, #ffe680 25%, #ffd940 50%, #ffcc00 100%); }
+
+.celia.right { background-image: linear-gradient(135deg, #ffcc00 0%, #ffd940 50%, #ffe680 75%, #ffd940 100%); }
+
+.celia .image {
+  height: 18em;
+  margin-top: -2em;
+}
+
+.celia img {
+  border: none;
+  height: 18em;
+}
+
+.celia.left .image { float: left; }
+
+.celia.right .image { float: right; }
+
+.celia .bubble {
+  background-color: #ff8080;
+  border-radius: 1em;
+  color: #ffffff;
+  font-family: 'Courgette', cursive;
+  line-height: 1.25;
+  margin: 1em;
+  padding: 0.5em;
+  position: relative;
+}
+
+.celia .bubble div {
+  max-height: 13.5em;
+  overflow: auto;
+  padding: 0 0.5em;
+}
+
+.celia.left .bubble {
+  float: right;
+  margin-left: 0;
+}
+
+.celia.right .bubble {
+  float: left;
+  margin-right: 0;
+}
+
+.celia .bubble:after {
+  border: 1.2em solid transparent;
+  content: '';
+  margin-top: -1.2em;
+  position: absolute;
+  top: 50%;
+  width: 0;
+  height: 0;
+}
+
+.celia.left .bubble:after {
+  left: 0;
+  border-left: 0;
+  margin-left: -1em;
+  border-right-color: #ff8080;
+}
+
+.celia.right .bubble:after {
+  right: 0;
+  border-right: 0;
+  margin-right: -1em;
+  border-left-color: #ff8080;
+}
+
+.celia.clickable { cursor: pointer; }
+
+.celia.clickable:hover .bubble { background-color: #ff6666; }
+
+.celia.left.clickable:hover .bubble:after { border-right-color: #ff6666; }
+
+.celia.right.clickable:hover .bubble:after { border-left-color: #ff6666; }
+
+a.celia-button {
+  background-color: #ff8080;
+  border: none;
+  border-radius: 1.25em;
+  cursor: pointer;
+  font-family: Verdana, sans-serif;
+  font-size: 1.5vw;
+  font-weight: bold;
+  height: 2.5em;
+  line-height: 2.5;
+  margin: 0 0 1em 0;
+  padding: 0 1em;
+}
+
+a.celia-button, a.celia-button:hover, a.celia-button:hover:visited, a.celia-button:visited {
+  color: #ffffff;
+  display: inline-block;
+  text-decoration: none;
+}
+
+a.celia-button:hover { background-color: #ff6666; }
